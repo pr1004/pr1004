@@ -1,0 +1,60 @@
+{% load static %}
+<html lang="en">
+	<head>
+			<meta charset="UTF-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+			<title>포트폴리오</title>
+			<link rel='stylesheet' type="text/css" href=" {% static 'css/main.css' %}">
+			<script src="https://kit.fontawesome.com/68cfb6c0f4.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		
+		<nav class="navbar is-transparent base_nav">
+			<div class="navbar-brand">
+				<a class="navbar-item" href="/">
+					<i class="fas fa-bone fa-3x">Bone</i>
+				</a>
+				<div class="navbar-burger" data-target="navbarExampleTransparentExample">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		
+			<div id="navbarExampleTransparentExample" class="navbar-menu">
+				<div class="navbar-start">
+					<a class="navbar-item">
+						Home
+					</a>
+					<div class="navbar-item has-dropdown is-hoverable">
+					</div>
+				</div>
+		
+				<div class="navbar-end">
+					<div class="navbar-item">
+						<div class="field is-grouped">
+							{% include 'login_tag.html'%}
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="base_cneter">
+			{% include 'message.html'%}
+
+			{% block base_center %}
+			{% endblock %}
+		</div>
+		<footer class="footer base_footer">
+			<div class="content has-text-centered">
+				<p>
+					<strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+					<a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+					is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+				</p>
+			</div>
+		</footer>
+	</body> 
+</html>
