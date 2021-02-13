@@ -1,0 +1,10 @@
+.center_login_form {
+  width: 400px;
+  height: 400px;
+  margin: 200px auto;
+}
+.btn-center {
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}

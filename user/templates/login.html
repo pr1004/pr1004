@@ -1,0 +1,14 @@
+{% extends 'base.html'%}
+{% block base_center %}
+<div class="center_login_form">
+  <form action="" method="POST">
+    <div>
+      {% csrf_token %}
+      {{ form }}
+      <div class="btn-center">
+        <button type="submit" class="button is-link">아이디만들기</button>
+      </div>
+    </div>
+  </form> 
+</div>
+{% endblock %}

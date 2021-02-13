@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'mysite.apps.MysiteConfig',
-    'login.apps.LoginConfig',
+    'user.apps.UserConfig',
+
     'debug_toolbar',
 ]
 
